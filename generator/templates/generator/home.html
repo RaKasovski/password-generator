@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>This is new homepage</h1>
+<form action="{% url 'password' %}">
+    <select name="length">
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12" selected="selected">12</option>
+    </select>
+    <br>
+        <input type="checkbox" name="uppercase"> Uppercase
+    </br>
+    <br>
+        <input type="checkbox" name="numbers"> Numbers
+    </br>
+    <br>
+        <input type="checkbox" name="special"> Special case
+    </br>
+
+    <input type="submit" value="Generator Password">
+</form>
+<a href="{% url 'inf' %}"><h2> about my website</h2></a>
+</body>
+</html>
